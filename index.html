@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Jhooy Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            Felipe <span>Jhooy</span>
+        </div>
+        <div class="nav-container">
+            <div class="links">
+                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
+                <a href="#Introduction" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Introduction</a>
+                <a href="#skills" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Skills</a>
+                <a href="#Services" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Services</a>
+                <a href="#Contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="#Introduction">Introduction</a>
+                <a href="#skills">Skills</a>
+                <a href="#Services">Services</a>
+                <a href="#Contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>    
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Hey I'm <span>Jhooy</span></h1>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800" class="typewriter">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">Sou desenvolvedor de software comprometido com boas práticas, código limpo e aprendizado constante.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/felipe-silva-b195b6383/" target="_blank">
+                        <i class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200"></i>
+                    </a>
+                    <a href="https://github.com/Jho0oy" target="_blank">
+                        <i class="fa-brands fa-github" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jhooy_felipe/?next=%2F" target="_blank">
+                        <i class="fa-brands fa-instagram" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"></i>
+                    </a>
+                </div>
+                <!--<button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700">Download CV</button>-->
+            </div>
+            <div class="image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="jhooy.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="Introduction"> <!--Section Introduction-->
+        <div class="main-container-about-services">
+            <div class="content-about-services">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600"><span>About me</span></h1>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">Sou estudante com 3 anos de formação no IFMA, no curso de Informática, onde adquiri conhecimentos sólidos em desenvolvimento de software, redes de computadores e manutenção de sistemas. Durante o curso, desenvolvi habilidades práticas em programação, análise de sistemas e suporte técnico, além de aprimorar a capacidade de trabalhar em equipe e resolver problemas de forma criativa. Busco oportunidades para aplicar meus conhecimentos em ambientes dinâmicos e desafiadores, visando sempre o aprendizado contínuo e o crescimento profissional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills"> <!--Section Skills-->
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">My <span>Skills</span></h1>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">Sem Skills por enquanto</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Services"> <!--Section Services-->
+        <div class="main-container-about-services">
+            <div class="content-about-services">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">My <span>Services</span></h1>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">
+                    Ofereço serviços de desenvolvimento de software personalizados, criação de sites responsivos e soluções de automação para otimizar processos empresariais. Com foco em qualidade e inovação, busco atender às necessidades específicas de cada cliente, garantindo resultados eficientes e satisfatórios.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="content-footer">
+        <p>© 2025 Felipe Jhooy. Todos os direitos reservados.</p>
+        <div class="socials">
+        <a href="https://www.linkedin.com/in/felipe-silva-b195b6383/" target="_blank">
+            <i class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200"></i>
+        </a>
+        <a href="https://github.com/Jho0oy" target="_blank">
+            <i class="fa-brands fa-github" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"></i>
+        </a>
+        <a href="https://www.instagram.com/jhooy_felipe/?next=%2F" target="_blank">
+            <i class="fa-brands fa-instagram" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"></i>
+        </a>
+        </div>
+    </div>
+    </footer>
+
+    <!-- Botão voltar ao topo -->
+    <button id="backToTop" title="Voltar ao topo">↑</button>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow-y: auto; 
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #1E90FF;
+    text-shadow: 0 0 10px #1E90FF;
+}
+
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    display: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+
+}
+
+.nav-container .links a{
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover{
+    color: #1E90FF;
+    border-bottom: 2px solid #1E90FF;
+}
+
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px black;
+    transition: 0.3s linear;
+}
+
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown .links a{
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+}
+
+.dropdown .links a:hover{
+    background-color: #1E90FF;
+}
+
+section{
+width: 100%;
+height: 90vh;
+}
+
+.main-container{ /* Starded Section home*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-container .content{
+    color: white;
+    width: 40%;
+    min-height: 100px;
+    box-shadow: 0 0 120px 50px black;
+}
+
+
+.content h1{
+    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+}
+
+.content h1 span{
+    font-weight: 700;
+    text-shadow: 0 0 10px #1E90FF;
+    color: #1E90FF;
+}
+
+.content .typewriter{
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    font-weight: 700;
+    margin: 10px 0;
+}
+/*Finish the section home*/
+
+
+
+.main-container-about-services{ /* Starded Section About me and Services*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1C1C1C;
+    filter: contrast(1.2);
+    transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+.main-container-about-services .content-about-services{
+    color: #F5F5F5; /* branco mais suave que #fff */
+    text-shadow: 0 0 5px rgba(0,0,0,0.6); /* melhora a legibilidade */
+    width: 40%;
+    min-height: 100px;
+    box-shadow: 0 0 80px 20px rgba(30,144,255,0.15); /* azul bem suave */
+    background: rgba(0, 0, 0, 0.2); /* leve fundo translúcido atrás do texto */
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.content-about-services h1{
+    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+}
+
+.content-about-services h1 span{
+    font-weight: 700;
+    text-shadow: 0 0 10px #1E90FF;
+    color: #1E90FF;
+}
+
+.content-about-services .typewriter{
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    font-weight: 700;
+    margin: 10px 0;
+} 
+
+.typewriter span{
+    color: #1E90FF;
+    text-shadow: 0 0  10px #1E90FF;
+}
+
+.content-about-services p{
+    font-size: clamp(0.8rem, 0.5rem + 3vw, 1.1rem);
+    margin: 20px 0;
+}
+/*Finish the section about me and Services*/
+
+
+.typewriter span{
+    color: #1E90FF;
+    text-shadow: 0 0  10px #1E90FF;
+}
+
+.content p{
+    font-size: clamp(0.8rem, 0.5rem + 3vw, 1.1rem);
+    margin: 20px 0;
+}
+
+.social-links a{
+    color: #1E90FF;
+    margin: 0 15px;
+    font-size: 1.8rem;
+    transition: 0.3s linear;
+    text-decoration: none; /* remove sublinhado */
+    outline: none;         /* remove borda de foco */
+    border: none;          /* remove qualquer borda */
+}
+
+.social-links i:hover{
+    filter: drop-shadow(0 0 10px #1E90FF);
+    scale: 1.3;
+}
+
+.content button{
+    width: 50%;
+    height: 6vh;
+    margin: 30px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+
+.content button:hover{
+    scale: 1.1;
+    border: 2px solid #1E90FF;
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px 5px #1E90FF;
+}
+
+.main-container .image{
+    width: 500px;
+    height: 60vh;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #1E90FF;
+    z-index: -1;
+}
+
+.main-container .image img{
+    width: 100%;
+}
+
+@media (max-width:884px) {
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nav-container .links{
+        display: none;
+    }
+
+    .hamburg,.cancel{
+        display: block;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+
+    .main-container .image{
+        width: 60%;
+        height: 70%;
+    }
+
+    .content button{
+        margin: 15px 25%;
+    }
+}
+
+
+@media (max-width:440px) {
+    .main-container .image{
+        width: 70%;
+        height: 60%;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+    
+}
+
+.Title{
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-size: clamp(1.5rem, 1rem + 5vw, 2.5rem);
+    font-weight: 700;
+}
+
+.footer {
+  background-color: black; /* fundo escuro */
+  color: #FFFFFF; /* texto branco */
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer .footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer a{
+    color: #1E90FF;
+    margin: 0 15px;
+    font-size: 1.8rem;
+    transition: 0.3s linear;
+    text-decoration: none; /* remove sublinhado */
+    outline: none;         /* remove borda de foco */
+    border: none;          /* remove qualquer borda */
+}
+
+.socials i:hover{
+    filter: drop-shadow(0 0 10px #1E90FF);
+    scale: 1.3;
+}
+
+
+/* button fixed */
+#backToTop { 
+  position: fixed; /* fica sempre no mesmo lugar */
+  bottom: 30px; /* distância do rodapé */
+  right: 30px;  /* distância da lateral direita */
+  z-index: 100; /* acima de outros elementos */
+  background-color: #1E90FF; /* azul masculino */
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 20%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #90E0EF; /* muda a cor no hover */
+  transform: translateY(-2px); /* leve animação ao passar o mouse */
+}
+
+
+
