@@ -384,6 +384,7 @@ height: 90vh;
   background-color: #90E0EF; /* muda a cor no hover */
   transform: translateY(-2px); /* leve animação ao passar o mouse */
 }
+<<<<<<< HEAD
 
 :root{
     --color-main: #0455BF;
@@ -523,3 +524,5 @@ font-size: var(--font-size-sub-title);
     margin-bottom: 20px;
 }
 
+=======
+>>>>>>> 87f5a3247825e50fa883541c7601f6af3267201e
