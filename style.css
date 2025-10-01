@@ -16,7 +16,8 @@ body{
 nav{
     width: 100%;
     height: 10vh;
-    position: sticky;
+    position: relative; /* garante contexto de empilhamento */
+    z-index: 9999; /* o nav inteiro vai ficar no topo */
 }
 
 .nav-container{
@@ -67,8 +68,9 @@ nav{
 }
 
 .dropdown{
-    z-index: 100;
+     z-index: 99999; /* garante que o dropdown fique acima de outros elementos */
     position: absolute;
+    left: 0;
     top: 0;
     transform: translateY(-500px);
     width: 100%;
@@ -383,5 +385,141 @@ height: 90vh;
   transform: translateY(-2px); /* leve animação ao passar o mouse */
 }
 
+:root{
+    --color-main: #0455BF;
+    --color-bg:#FBFAFA;
 
+
+    --color-sub-title:#0455BF;
+    --color-third-title:#263140;
+    --color-paragrafo: #828282;
+    --color-nav-text:#36465C;
+
+    --font-size-sub-title:26px;
+    --font-size-third-title:23px;
+    --font-size-paragrafo:20px;
+}
+.lista-skills{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+.box-skill{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    align-items:center;
+    justify-content: space-around;
+
+    background-color: #fff;
+    border-radius:12px;
+    border-bottom:5px solid var(--color-main);
+
+    padding:15px;
+    width:100%;
+    font-weight:bold;
+    
+    cursor:pointer;
+}
+.tag-skill{
+    background-color:#0455bf3f;
+    padding:4px;
+    font-size:0.5em !important;
+    border-radius:5px;
+    color:var(--color-paragrafo);
+}
+.flex{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.sub-title-inicio{
+    font-size: 1.5em;
+    color:#263140bb;
+}
+.sub-title{
+color: var(--color-sub-title);
+font-size: var(--font-size-sub-title);
+}
+
+
+/* Section Skills */
+.skills {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  min-height: auto;   /* <--- não força 100vh */
+  height: auto;       /* <--- altura acompanha o conteúdo */
+}
+
+.skills .main-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* espaço entre título e lista */
+}
+
+.skills .content {
+    width: 100%;
+    max-width: 900px; /* limita largura em telas grandes */
+    text-align: center;
+    color: white;
+}
+
+.lista-skills {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* duas colunas */
+  gap: 20px; /* espaço entre as caixas */
+  width: 100%;
+  max-width: 800px; /* limita largura total */
+}
+
+.box-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+
+  background-color: #111; /* contraste com fundo preto */
+  border-radius: 12px;
+  border-bottom: 5px solid var(--color-main);
+
+  padding: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box-skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #1E90FF;
+}
+
+/* Responsivo para telas pequenas: volta para 1 coluna */
+@media (max-width: 600px) {
+  .lista-skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+.my-skills-h1 {
+    font-size: clamp(1.5rem, 1rem + 5vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
