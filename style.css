@@ -335,11 +335,12 @@ height: 90vh;
 }
 
 .footer {
-  background-color: black; /* fundo escuro */
+background-color: #1C1C1C; /* fundo cinza */
   color: #FFFFFF; /* texto branco */
   padding: 20px 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
 }
 
 .footer .footer-content {
@@ -521,4 +522,53 @@ font-size: var(--font-size-sub-title);
     font-size: clamp(1.5rem, 1rem + 5vw, 2.5rem);
     font-weight: 700;
     margin-bottom: 20px;
+}
+
+.lista-contatos{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+.box-contato{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    justify-content:center;
+
+    background-color: #fff;
+    border-radius:12px;
+
+    padding:15px;
+    font-weight:bold;
+    cursor:pointer;
+
+    width:400px;
+}
+
+.box-contato:hover{
+    background: rgba(4, 85, 191, 0.178);
+    transition: 0.5s;
+    
+}
+
+.icon-contato{
+    width:20%;
+}
+
+.box-contato > a{
+    color:var(--color-paragrafo);
+    display: flex;
+    flex-direction:row-reverse;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+.sub-title-contato{
+    font-weight: 700;
+    margin-bottom: -10px;
+    text-shadow: 0 0 10px #1E90FF;
+    color: #1E90FF;
+    margin-top: 10px;
 }
